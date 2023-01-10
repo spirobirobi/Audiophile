@@ -1,0 +1,157 @@
+@import "colors";
+@import "typeography";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    .hero{
+   
+        position: absolute;
+        width: 100%;
+        height: 729px;
+        left: 0px;
+        top: 0px;
+        background-image: url(/assets/home/desktop/image-hero.jpg);
+        
+      .nav{
+        img{
+            position: absolute;
+    width: 143px;
+    height: 25px;
+    left: 165px;
+    top: 35px;
+    cursor: pointer;
+
+        }
+        .block{
+            position: absolute;
+        width: 600px;
+        height: 50px;
+        left: 705px;
+        top: -10px;
+
+            ul{
+                list-style:none;
+                li{
+                    float: left;
+                    a{
+                        display: block;
+      color: white;
+      text-align: center;
+      padding: 34px;
+      text-decoration: none;
+      font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+                    }
+                }
+            }
+            img{
+                position: absolute;
+                width: 23.33px;
+                height: 20px;
+                top: 46px;
+                left: 1000px;
+                cursor: pointer;
+
+
+
+            }
+        }
+      }
+      .bar{
+        position: absolute;
+    width: 1600px;
+    height: 1px;
+    left: 165px;
+    top: 96px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+      }
+       .textbox{
+        position: absolute;
+        width: 398px;
+        height: 346px;
+        left: 165px;
+        top: 225px;
+        
+        .titl{
+            position: absolute;
+            height: 19px;
+            left: 0%;
+            top: calc(50% - 19px/2 - 163.5px);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            color: $white;
+        }
+        h1{
+            position: absolute;
+height: 116px;
+left: 0%;
+right: 0.5%;
+top: calc(50% - 116px/2 - 72px);
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 58px;
+
+
+letter-spacing: 2px;
+text-transform: uppercase;
+
+color: $white;
+
+        }
+        .desc{
+            position: absolute;
+left: 0%;
+right: 12.31%;
+top: 52.89%;
+bottom: 25.43%;
+
+
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+
+color: $white;
+
+mix-blend-mode: normal;
+opacity: 0.75;
+        }
+        button{
+            position: absolute;
+left: 0%;
+right: 59.8%;
+top: 86.13%;
+bottom: 0%;
+background-color: $orange;
+color: $white;
+border: 0;
+border-radius: 3px;
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 18px;
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+
+        }
+       }     
+    }
+}
