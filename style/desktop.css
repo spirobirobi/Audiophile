@@ -37,6 +37,8 @@ body {
 body {
   margin: 0;
   padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 body .hero {
   position: absolute;
@@ -162,4 +164,19 @@ body .hero .textbox button {
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+body .categories {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  width: 1110px;
+  height: 284px;
+  left: 21%;
+  top: 849px;
+}
+body .categories #present {
+  width: 350px;
+  height: 204px;
+  border-radius: 8px;
+  background-color: #F1F1F1;
 }/*# sourceMappingURL=desktop.css.map */

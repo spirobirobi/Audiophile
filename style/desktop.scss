@@ -6,6 +6,8 @@
 body{
     margin: 0;
     padding: 0;
+    position: relative;
+    overflow: hidden;
     .hero{
    
         position: absolute;
@@ -153,5 +155,21 @@ text-transform: uppercase;
 
         }
        }     
+    }
+    .categories{     
+position: absolute;
+display: flex;
+gap:20px;
+width: 1110px;
+height: 284px;
+left: 21%;
+top: 849px;
+#present{
+    width:350px ;
+    height:204px ;
+    border-radius: 8px;
+    background-color: $grey;
+}
+
     }
 }
