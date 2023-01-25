@@ -34,11 +34,14 @@ body {
   font-size: 15px;
 }
 
+button {
+  font-family: "Manrope", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  overflow: hidden;
 }
 body .hero {
   position: absolute;
@@ -179,4 +182,46 @@ body .categories #present {
   height: 204px;
   border-radius: 8px;
   background-color: #F1F1F1;
+}
+body .categories .headphones img {
+  position: absolute;
+  left: 120px;
+  top: -60px;
+  width: 125px;
+  height: 160px;
+}
+body .categories .headphones h6 {
+  position: absolute;
+  top: 50px;
+  left: 130px;
+}
+body .categories .headphones button {
+  width: 58px;
+  height: 18px;
+  border: 0;
+  position: absolute;
+  left: 150px;
+  top: 130px;
+  background-color: #F1F1F1;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Manrope";
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: bold;
+}
+body .categories .headphones button:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
+body .categories .headphones .arrow {
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  left: 200px;
+  top: 135px;
 }/*# sourceMappingURL=desktop.css.map */

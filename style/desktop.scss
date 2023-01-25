@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     .hero{
    
         position: absolute;
@@ -169,6 +169,56 @@ top: 849px;
     height:204px ;
     border-radius: 8px;
     background-color: $grey;
+}
+.headphones{
+    img{
+        position: absolute;
+left: 120px;
+top: -60px;
+width: 125px;
+height: 160px;
+    }
+    h6{
+        position: absolute;
+        top: 50px;
+        left: 130px;
+
+    }
+    button{
+        width: 58px;
+        height: 18px;
+        border: 0;
+       position: absolute;
+       left: 150px;
+       top: 130px;
+       background-color: $grey;
+       font-size: 12px;
+line-height: 18px;
+font-family: 'Manrope';
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+mix-blend-mode: normal;
+opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+
+
+
+    }
+    .arrow{
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 200px;
+       top: 135px;
+       
+
+    }
 }
 
     }
