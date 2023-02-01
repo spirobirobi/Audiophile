@@ -6,6 +6,8 @@
 body{
     margin: 0;
     padding: 0;
+    position: relative;
+    // overflow: hidden;
     .hero{
    
         position: absolute;
@@ -153,5 +155,169 @@ text-transform: uppercase;
 
         }
        }     
+    }
+    .categories{     
+position: absolute;
+display: flex;
+gap:20px;
+width: 1110px;
+height: 284px;
+left: 21%;
+top: 849px;
+#present{
+    width:350px ;
+    height:204px ;
+    border-radius: 8px;
+    background-color: $grey;
+}
+.headphones{
+    img{
+        position: absolute;
+left: 120px;
+top: -60px;
+width: 125px;
+height: 160px;
+    }
+    h6{
+        position: absolute;
+        top: 50px;
+        left: 130px;
+
+    }
+    button{
+        width: 58px;
+        height: 18px;
+        border: 0;
+       position: absolute;
+       left: 150px;
+       top: 130px;
+       background-color: $grey;
+       font-size: 12px;
+line-height: 18px;
+font-family: 'Manrope';
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+mix-blend-mode: normal;
+opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+
+
+
+    }
+    .arrow{
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 200px;
+       top: 135px;
+       
+
+    }
+}
+.speakers{
+    img{
+        width: 122px;
+        height: 146px;
+        position: absolute;
+        left: 44%;
+        top: -60px;
+    }
+    h6{
+       position: absolute;
+       left: 500px;
+       top: 50px;
+    }
+    button{
+        width: 58px;
+        height: 18px;
+        border: 0;
+       position: absolute;
+       left: 510px;
+       top: 130px;
+       background-color: $grey;
+       font-size: 12px;
+line-height: 18px;
+font-family: 'Manrope';
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+mix-blend-mode: normal;
+opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+
+
+
+    }
+    .arrow{
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 560px;
+       top: 135px;
+       
+
+    }
+}
+.earphones{
+    img{
+        width: 178px;
+        height: 161px;
+        position: absolute;
+        left: 75%;
+        top: -60px;
+    }
+    h6{
+        position: absolute;
+        left: 870px;
+        top: 50px;
+     }
+     button{
+        width: 58px;
+        height: 18px;
+        border: 0;
+       position: absolute;
+       left: 880px;
+       top: 130px;
+       background-color: $grey;
+       font-size: 12px;
+line-height: 18px;
+font-family: 'Manrope';
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+mix-blend-mode: normal;
+opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+
+
+
+    }
+    .arrow{
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 930px;
+       top: 135px;
+       
+
+    }
+}
+
     }
 }
