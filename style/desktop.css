@@ -224,4 +224,88 @@ body .categories .headphones .arrow {
   position: absolute;
   left: 200px;
   top: 135px;
+}
+body .categories .speakers img {
+  width: 122px;
+  height: 146px;
+  position: absolute;
+  left: 44%;
+  top: -60px;
+}
+body .categories .speakers h6 {
+  position: absolute;
+  left: 500px;
+  top: 50px;
+}
+body .categories .speakers button {
+  width: 58px;
+  height: 18px;
+  border: 0;
+  position: absolute;
+  left: 510px;
+  top: 130px;
+  background-color: #F1F1F1;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Manrope";
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: bold;
+}
+body .categories .speakers button:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
+body .categories .speakers .arrow {
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  left: 560px;
+  top: 135px;
+}
+body .categories .earphones img {
+  width: 178px;
+  height: 161px;
+  position: absolute;
+  left: 75%;
+  top: -60px;
+}
+body .categories .earphones h6 {
+  position: absolute;
+  left: 870px;
+  top: 50px;
+}
+body .categories .earphones button {
+  width: 58px;
+  height: 18px;
+  border: 0;
+  position: absolute;
+  left: 880px;
+  top: 130px;
+  background-color: #F1F1F1;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Manrope";
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: bold;
+}
+body .categories .earphones button:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
+body .categories .earphones .arrow {
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  left: 930px;
+  top: 135px;
 }/*# sourceMappingURL=desktop.css.map */

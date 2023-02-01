@@ -220,6 +220,104 @@ font-weight: bold;
 
     }
 }
+.speakers{
+    img{
+        width: 122px;
+        height: 146px;
+        position: absolute;
+        left: 44%;
+        top: -60px;
+    }
+    h6{
+       position: absolute;
+       left: 500px;
+       top: 50px;
+    }
+    button{
+        width: 58px;
+        height: 18px;
+        border: 0;
+       position: absolute;
+       left: 510px;
+       top: 130px;
+       background-color: $grey;
+       font-size: 12px;
+line-height: 18px;
+font-family: 'Manrope';
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+mix-blend-mode: normal;
+opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+
+
+
+    }
+    .arrow{
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 560px;
+       top: 135px;
+       
+
+    }
+}
+.earphones{
+    img{
+        width: 178px;
+        height: 161px;
+        position: absolute;
+        left: 75%;
+        top: -60px;
+    }
+    h6{
+        position: absolute;
+        left: 870px;
+        top: 50px;
+     }
+     button{
+        width: 58px;
+        height: 18px;
+        border: 0;
+       position: absolute;
+       left: 880px;
+       top: 130px;
+       background-color: $grey;
+       font-size: 12px;
+line-height: 18px;
+font-family: 'Manrope';
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+mix-blend-mode: normal;
+opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+
+
+
+    }
+    .arrow{
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 930px;
+       top: 135px;
+       
+
+    }
+}
 
     }
 }
