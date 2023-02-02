@@ -167,6 +167,7 @@ body .hero .textbox button {
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 body .categories {
   position: absolute;
@@ -381,10 +382,39 @@ body .circles {
   top: 1200px;
   left: 235px;
 }
+body .hero3 {
+  width: 1110px;
+  height: 320px;
+  background-image: url(/assets/home/desktop/image-speaker-zx7.jpg);
+  position: absolute;
+  top: 1870px;
+  left: 385px;
+  border-radius: 5px;
+}
+body .hero3 h4 {
+  text-transform: uppercase;
+  position: absolute;
+  left: 95px;
+  top: 87px;
+}
+body .hero3 button {
+  width: 160px;
+  height: 48px;
+  position: absolute;
+  left: 97px;
+  top: 187px;
+  border: 2px solid #101010;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
 body .footer {
   width: 100%;
   height: 365px;
   background-color: #101010;
   position: absolute;
-  top: 3000px;
+  top: 4000px;
 }/*# sourceMappingURL=desktop.css.map */
