@@ -151,6 +151,7 @@ line-height: 18px;
 
 letter-spacing: 1px;
 text-transform: uppercase;
+cursor: pointer;
 
 
         }
@@ -398,11 +399,40 @@ font-weight: bold;
         
         
     }
+    .hero3{
+        width: 1110px;
+        height: 320px;
+        background-image: url(/assets/home/desktop/image-speaker-zx7.jpg);
+        position: absolute;
+        top: 1870px;
+        left:385px ;
+        border-radius: 5px;
+        h4{
+            text-transform: uppercase;
+            position: absolute;
+            left: 95px;
+            top: 87px;
+        }
+        button{
+            width: 160px;
+            height: 48px;
+            position: absolute;
+            left: 97px;
+            top:187px;
+            border: 2px solid $black;
+            text-transform: uppercase;
+            cursor: pointer;
+            background-color: transparent;
+            font-weight: 700;
+font-size: 13px;
+line-height: 18px;
+        }
+    }
     .footer{
         width:100%;
         height:365px;
         background-color: $black;
         position: absolute;
-        top: 3000px;
+        top: 4000px;
     }
 }
