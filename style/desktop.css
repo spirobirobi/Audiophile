@@ -503,6 +503,7 @@ body .footer img {
   position: relative;
   top: 75px;
   left: 165px;
+  cursor: pointer;
 }
 body .footer ul {
   position: absolute;
