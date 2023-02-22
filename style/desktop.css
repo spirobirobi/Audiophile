@@ -38,43 +38,35 @@ button {
   font-family: "Manrope", sans-serif;
 }
 
-body {
+* {
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
-  position: relative;
 }
-body .hero {
-  position: absolute;
-  width: 100%;
-  height: 729px;
-  left: 0px;
-  top: 0px;
+
+header {
   background-image: url(/assets/home/desktop/image-hero.jpg);
+  height: 80vh;
 }
-body .hero .nav img {
+header img {
   position: absolute;
-  width: 143px;
-  height: 25px;
-  left: 165px;
-  top: 35px;
+  left: 10%;
+  top: 3.5%;
   cursor: pointer;
 }
-body .hero .nav .block {
-  position: absolute;
-  width: 600px;
-  height: 50px;
-  left: 705px;
-  top: -10px;
+header .block {
+  display: flex;
+  justify-content: center;
 }
-body .hero .nav .block ul {
+header .block ul {
   list-style: none;
 }
-body .hero .nav .block ul li {
+header .block ul li {
   float: left;
 }
-body .hero .nav .block ul li a {
+header .block ul li a {
   display: block;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   padding: 34px;
   text-decoration: none;
@@ -82,81 +74,47 @@ body .hero .nav .block ul li a {
   font-size: 13px;
   font-weight: bold;
 }
-body .hero .nav .block img {
-  position: absolute;
-  width: 23.33px;
+header .block img {
+  width: 23px;
   height: 20px;
-  top: 46px;
-  left: 1000px;
-  cursor: pointer;
+  position: relative;
+  left: 13vw;
+  top: 3.5vh;
 }
-body .hero .bar {
-  position: absolute;
-  width: 1600px;
-  height: 1px;
-  left: 165px;
-  top: 96px;
+header .bar {
   background: #FFFFFF;
-  mix-blend-mode: normal;
   opacity: 0.2;
+  height: 1px;
+  width: 70vw;
+  position: relative;
+  left: 9%;
 }
-body .hero .textbox {
-  position: absolute;
-  width: 398px;
-  height: 346px;
-  left: 165px;
-  top: 225px;
+header .textbox {
+  width: 50vw;
+  position: relative;
+  left: 10%;
+  top: 10%;
 }
-body .hero .textbox .titl {
-  position: absolute;
-  height: 19px;
-  left: 0%;
-  top: calc(50% - 9.5px - 163.5px);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 10px;
+header .textbox p {
+  width: 10vw;
   text-transform: uppercase;
-  mix-blend-mode: normal;
+  color: #FFFFFF;
   opacity: 0.5;
-  color: #FFFFFF;
+  padding-bottom: 24px;
 }
-body .hero .textbox h1 {
-  position: absolute;
-  height: 116px;
-  left: 0%;
-  right: 0.5%;
-  top: calc(50% - 58px - 72px);
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 58px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+header .textbox h1 {
+  width: 17vw;
   color: #FFFFFF;
+  padding-bottom: 24px;
 }
-body .hero .textbox .desc {
-  position: absolute;
-  left: 0%;
-  right: 12.31%;
-  top: 52.89%;
-  bottom: 25.43%;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  color: #FFFFFF;
-  mix-blend-mode: normal;
-  opacity: 0.75;
+header .textbox .desc {
+  width: 349px;
+  text-transform: none;
+  padding-bottom: 40px;
 }
-body .hero .textbox button {
-  position: absolute;
-  left: 0%;
-  right: 59.8%;
-  top: 86.13%;
-  bottom: 0%;
+header .textbox button {
+  width: 160px;
+  height: 48px;
   background-color: #D87D4A;
   color: #FFFFFF;
   border: 0;
@@ -169,197 +127,101 @@ body .hero .textbox button {
   text-transform: uppercase;
   cursor: pointer;
 }
-body .categories {
-  position: absolute;
+
+main {
   display: flex;
-  gap: 20px;
-  width: 1110px;
-  height: 284px;
-  left: 21%;
-  top: 849px;
-  margin-bottom: 50px;
+  flex-direction: column;
+  padding-top: 127px;
+  align-items: center;
 }
-body .categories #present {
+main .categories {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 168px;
+}
+main .categories #present {
   width: 350px;
   height: 204px;
   border-radius: 8px;
   background-color: #F1F1F1;
+  position: relative;
 }
-body .categories .headphones img {
-  position: absolute;
-  left: 120px;
-  top: -60px;
-  width: 125px;
+main .categories #present button {
+  width: 58px;
+  height: 18px;
+  border: 0;
+  width: 58px;
+  height: 18px;
+  border: 0;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: bold;
+}
+main .categories #present button:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
+main .categories #present img {
+  width: 130px;
   height: 160px;
+  position: relative;
+  left: 30%;
+  bottom: 30%;
 }
-body .categories .headphones h6 {
-  position: absolute;
-  top: 50px;
-  left: 130px;
+main .categories #present h6 {
+  position: relative;
+  left: 37%;
+  bottom: 30%;
 }
-body .categories .headphones button {
-  width: 58px;
-  height: 18px;
-  border: 0;
-  position: absolute;
-  left: 150px;
-  top: 130px;
-  background-color: #F1F1F1;
-  font-size: 12px;
-  line-height: 18px;
-  font-family: "Manrope";
-  font-style: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  cursor: pointer;
-  font-weight: bold;
+main .categories #present button {
+  position: relative;
+  left: 40%;
+  bottom: 25%;
 }
-body .categories .headphones button:hover {
-  color: #D87D4A;
-  opacity: 1;
-}
-body .categories .headphones .arrow {
+main .categories #present .arrow {
   width: 5px;
   height: 10px;
-  position: absolute;
-  left: 200px;
-  top: 135px;
+  position: relative;
+  left: 37%;
+  bottom: 50px;
 }
-body .categories .speakers img {
-  width: 122px;
-  height: 146px;
-  position: absolute;
-  left: 44%;
-  top: -60px;
-}
-body .categories .speakers h6 {
-  position: absolute;
-  left: 500px;
-  top: 50px;
-}
-body .categories .speakers button {
-  width: 58px;
-  height: 18px;
-  border: 0;
-  position: absolute;
-  left: 510px;
-  top: 130px;
-  background-color: #F1F1F1;
-  font-size: 12px;
-  line-height: 18px;
-  font-family: "Manrope";
-  font-style: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  cursor: pointer;
-  font-weight: bold;
-}
-body .categories .speakers button:hover {
-  color: #D87D4A;
-  opacity: 1;
-}
-body .categories .speakers .arrow {
-  width: 5px;
-  height: 10px;
-  position: absolute;
-  left: 560px;
-  top: 135px;
-}
-body .categories .earphones img {
-  width: 178px;
-  height: 161px;
-  position: absolute;
-  left: 75%;
-  top: -60px;
-}
-body .categories .earphones h6 {
-  position: absolute;
-  left: 870px;
-  top: 50px;
-}
-body .categories .earphones button {
-  width: 58px;
-  height: 18px;
-  border: 0;
-  position: absolute;
-  left: 880px;
-  top: 130px;
-  background-color: #F1F1F1;
-  font-size: 12px;
-  line-height: 18px;
-  font-family: "Manrope";
-  font-style: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  cursor: pointer;
-  font-weight: bold;
-}
-body .categories .earphones button:hover {
-  color: #D87D4A;
-  opacity: 1;
-}
-body .categories .earphones .arrow {
-  width: 5px;
-  height: 10px;
-  position: absolute;
-  left: 930px;
-  top: 135px;
-}
-body .hero2 {
-  width: 1100px;
-  height: 560px;
+main .hero2 {
   background-color: #D87D4A;
-  position: absolute;
-  top: 1200px;
-  left: 390px;
-  margin: 0;
-  padding-bottom: 30px;
+  width: 1110px;
+  height: 560px;
   border-radius: 5px;
+  position: relative;
+  margin-bottom: 36px;
 }
-body .hero2 img {
+main .hero2 img {
   width: 410px;
   height: 493px;
   position: absolute;
-  left: 117px;
-  top: 105px;
-  z-index: 1;
+  left: 15%;
+  top: 13.4%;
 }
-body .hero2 .text-container {
+main .hero2 .text-container {
   width: 349px;
   height: 303px;
   position: absolute;
-  left: 666px;
-}
-body .hero2 .text-container h1 {
+  left: 65%;
+  bottom: 30%;
   color: #FFFFFF;
+}
+main .hero2 .text-container h1 {
+  width: 240px;
   text-transform: uppercase;
-  margin: 0;
-  position: absolute;
-  top: 133px;
-  left: -20px;
-  width: 261px;
-  height: 116px;
+  padding-bottom: 24px;
 }
-body .hero2 .text-container p {
-  width: 349px;
-  height: 75px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 300px;
+main .hero2 .text-container p {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
-  mix-blend-mode: normal;
   opacity: 0.75;
-  right: 5px;
+  padding-bottom: 40px;
 }
-body .hero2 .text-container button {
+main .hero2 .text-container button {
   width: 160px;
   height: 48px;
   color: #FFFFFF;
@@ -369,40 +231,28 @@ body .hero2 .text-container button {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 1px;
-  position: absolute;
   z-index: 1;
-  top: 428px;
-  left: -10px;
   cursor: pointer;
 }
-body .circles {
-  width: 944px;
-  height: 944px;
-  position: absolute;
-  top: 1200px;
-  left: 235px;
-}
-body .hero3 {
+main .hero3 {
   width: 1110px;
   height: 320px;
   background-image: url(/assets/home/desktop/image-speaker-zx7.jpg);
-  position: absolute;
-  top: 1870px;
-  left: 385px;
-  border-radius: 5px;
+  position: relative;
+  margin-bottom: 60px;
 }
-body .hero3 h4 {
+main .hero3 h4 {
   text-transform: uppercase;
   position: absolute;
   left: 95px;
   top: 87px;
 }
-body .hero3 button {
+main .hero3 button {
   width: 160px;
   height: 48px;
   position: absolute;
   left: 97px;
-  top: 187px;
+  top: 160px;
   border: 2px solid #101010;
   text-transform: uppercase;
   cursor: pointer;
@@ -411,16 +261,12 @@ body .hero3 button {
   font-size: 13px;
   line-height: 18px;
 }
-body .hero4 {
-  width: 1110px;
-  height: 320px;
-  position: absolute;
-  top: 2300px;
-  left: 380px;
+main .yx1 {
   display: flex;
   gap: 30px;
+  margin-bottom: 200px;
 }
-body .hero4 .photo {
+main .yx1 .photo {
   width: 540px;
   height: 320px;
   background-image: url(/assets/home/desktop/image-earphones-yx1.jpg);
@@ -428,21 +274,22 @@ body .hero4 .photo {
   background-size: cover;
   border-radius: 5px;
 }
-body .hero4 .prod {
+main .yx1 .info {
   width: 540px;
   height: 320px;
+  position: relative;
   background-color: #F1F1F1;
   border-radius: 5px;
   text-transform: uppercase;
   position: relative;
 }
-body .hero4 .prod h4 {
+main .yx1 .info h4 {
   position: absolute;
   left: 95px;
   top: 101px;
   margin: 0;
 }
-body .hero4 .prod button {
+main .yx1 .info button {
   width: 160px;
   height: 48px;
   position: absolute;
@@ -457,65 +304,63 @@ body .hero4 .prod button {
   line-height: 18px;
   letter-spacing: 1px;
 }
-body .about {
+main .about {
   width: 1110px;
   height: 588px;
-  margin: 0px;
   position: relative;
-  top: 2800px;
-  left: 380px;
-  border: 2px solid black;
+  margin-bottom: 200px;
 }
-body .about h2 {
+main .about h2 {
   width: 445px;
   height: 88px;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
-body .about h2 span {
+main .about h2 span {
   color: #D87D4A;
 }
-body .about p {
+main .about p {
   width: 445px;
   height: 175px;
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
-  mix-blend-mode: normal;
   opacity: 0.5;
   margin: 0;
 }
-body .about img {
+main .about img {
   width: 540px;
   height: 588px;
   border-radius: 5px;
-  position: relative;
+  position: absolute;
   left: 570px;
-  bottom: 330px;
+  bottom: 0%;
 }
-body .footer {
+
+footer {
   width: 100%;
   height: 365px;
   background-color: #101010;
   position: relative;
-  top: 3000px;
 }
-body .footer img {
+footer img {
   position: relative;
   top: 75px;
   left: 165px;
   cursor: pointer;
 }
-body .footer ul {
+footer ul {
   position: absolute;
-  left: 967px;
+  left: 60%;
+  bottom: 64%;
   list-style: none;
 }
-body .footer ul li {
+footer ul li {
   float: left;
 }
-body .footer ul li a {
+footer ul li a {
   display: block;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   padding: 34px;
   text-decoration: none;
@@ -523,7 +368,7 @@ body .footer ul li a {
   font-size: 13px;
   font-weight: bold;
 }
-body .footer p {
+footer p {
   width: 540px;
   height: 100px;
   color: #FFFFFF;
@@ -533,21 +378,20 @@ body .footer p {
   top: 136px;
   left: 165px;
 }
-body .footer .socialBox {
+footer .socialBox {
   position: absolute;
   left: 1171px;
   top: 155px;
   display: flex;
   gap: 16px;
 }
-body .footer .socialBox img {
+footer .socialBox img {
   cursor: pointer;
 }
-body .footer .copyright {
+footer .copyright {
   position: absolute;
   left: 165px;
   top: 292px;
   color: #FFFFFF;
-  mix-blend-mode: normal;
   opacity: 0.5;
 }/*# sourceMappingURL=desktop.css.map */
