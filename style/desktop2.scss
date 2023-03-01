@@ -70,6 +70,7 @@ main{
         width: 1110px;
         height: 560px;
         display: flex;
+        flex-direction: row;
         gap: 125px;
         
         img{
@@ -118,6 +119,9 @@ main{
             }
     
         }
+    }
+    #right{
+        flex-direction: row-reverse;
     }
     .categories{
         display: flex;

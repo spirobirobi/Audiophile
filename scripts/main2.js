@@ -40,14 +40,21 @@ return box;
    }
 function populate(lista){
     const container=document.getElementById('container');
+    let j=0;
     for (let i = 0; i < lista.length; i++) {
         const item1 = createItem(lista[i]);
       if(lista[i].category==params.category.toLocaleLowerCase()){
 
         container.appendChild(item1); 
+        j++;
+        if(j%2!=0){
+            item1.setAttribute('id','left');
+        }
+        else{
+            item1.setAttribute('id','right');
+        }
       }
-        
-             
+  
     }
     
 }
