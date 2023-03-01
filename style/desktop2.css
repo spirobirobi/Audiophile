@@ -108,6 +108,7 @@ main .box {
   width: 1110px;
   height: 560px;
   display: flex;
+  flex-direction: row;
   gap: 125px;
 }
 main .box img {
@@ -153,6 +154,9 @@ main .box .textbox button {
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
+}
+main #right {
+  flex-direction: row-reverse;
 }
 main .categories {
   display: flex;
