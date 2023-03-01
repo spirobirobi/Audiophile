@@ -1,0 +1,212 @@
+@import "colors";
+@import "typeography";
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+header{
+   background-color: $black;
+    height: 40vh;
+    margin-bottom:160px;
+    img{
+        position: absolute;
+        left: 10%;
+    top: 3.5%;
+    cursor: pointer;
+    }
+    .block{
+        display: flex;
+        justify-content: center;
+      
+        
+        ul{
+            list-style:none;
+            li{
+                float: left;
+                a{
+                    display: block;
+  color: $white;
+  text-align: center;
+  padding: 34px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+font-size: 13px;
+font-weight: bold;
+                }
+            }
+        }
+        img{
+            width: 23px;
+            height: 20px;
+            position: relative;
+            left: 13vw;
+            top: 3.5vh;
+        }
+    }
+    .bar{
+        background: $white;
+    opacity: 0.2;
+    height: 1px;
+    width: 70vw;
+    position: relative;
+    left: 9%;
+    }
+    h2{
+        color: $white;
+        position: relative;
+        left: 40%;
+        top: 30%;
+        width: 40px;
+    }
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 160px;
+    .box{
+        width: 1110px;
+        height: 560px;
+        display: flex;
+        gap: 125px;
+        
+        img{
+            width: 540px;
+            height: 560px; 
+            border-radius: 4px;
+        }
+        .textbox{
+            width: 50vw;
+            position: relative;
+            left: 10%;
+            top: 10%;
+            p{
+                width:10vw ;
+                text-transform: uppercase;
+                color: $orange;
+                opacity: 0.5;
+                padding-bottom: 24px;
+            }
+            h1{
+                width: 17vw;
+                color: $black;
+                padding-bottom: 24px;
+            }
+            .desc{
+                    width: 349px;
+                    text-transform:none;
+                    padding-bottom: 40px;
+                    color: $black;
+            }
+            button{
+                width: 160px;
+                height: 48px;
+                background-color: $orange;
+    color: $white;
+    border: 0;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+            }
+    
+        }
+    }
+    .categories{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding-bottom: 168px;
+        #present{
+            width:350px ;
+            height:204px ;
+            border-radius: 8px;
+            background-color: $grey;
+            position: relative;
+           
+            
+            button{
+                width: 58px;
+        height: 18px;
+        border: 0;
+        width: 58px;
+        height: 18px;
+        border: 0;
+        opacity: 0.5;
+cursor: pointer;
+font-weight: bold;
+&:hover{
+    color: $orange;
+    opacity: 1;
+}
+            }
+            img{
+                width: 130px;
+                height: 160px;
+                position: relative;
+                left: 30%;
+                bottom: 30%;
+            }
+            h6{
+                position: relative;
+                left: 37%;
+                bottom: 30%;
+            }
+            button{
+                position: relative;
+                left: 40%;
+                bottom: 25%;
+            }
+            .arrow{
+                width: 5px;
+                height: 10px;
+                position: relative;
+                left: 37%;
+                bottom: 50px;
+
+            }
+           
+        }
+     
+    }  
+    .about{
+        width: 1110px;
+        height: 588px;
+        position: relative;
+        margin-bottom: 200px;
+        h2{
+            width: 445px;
+            height: 88px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            span{
+                color: $orange;
+            }
+        }
+        p{
+            width: 445px;
+            height: 175px;
+            font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    margin: 0;
+           }
+           img{
+            width: 540px;
+            height: 588px;
+            border-radius: 5px;
+            position: absolute;
+            left: 570px;
+           bottom: 0%;
+           }
+        
+    }
+}
