@@ -23,6 +23,7 @@ header{
             list-style:none;
             li{
                 float: left;
+                cursor: pointer;
                 a{
                     display: block;
   color: $white;
@@ -330,6 +331,7 @@ footer{
             list-style:none;
             li{
                 float: left;
+                cursor: pointer;
                 a{
                     display: block;
   color: $white;

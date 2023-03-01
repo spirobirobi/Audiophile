@@ -1,0 +1,55 @@
+fetch('./data.json')
+.then((response)=>response.json())
+.then((json)=>{
+
+    const urlSearchParams= new URLSearchParams(window.location.search);
+    const params= Object.fromEntries(urlSearchParams.entries());
+   const header=document.getElementById('header');
+   const write=document.createElement('h2');
+   write.textContent=params.category;
+   header.appendChild(write);
+   function createItem (object){
+
+   const box=document.createElement('div');
+   box.classList.add('box');
+   const image=document.createElement('img');
+   image.setAttribute('src',object.categoryImage.desktop);
+   box.appendChild(image);
+   const textBox=document.createElement('div');
+   textBox.classList.add('textbox');
+   if(object.new==true)
+   {
+    const new1=document.createElement('p');
+    new1.textContent='new product';
+    textBox.appendChild(new1);
+   }
+   const title=document.createElement('h1');
+   title.textContent=object.name;
+   textBox.appendChild(title);
+   const description1=document.createElement('p');
+   description1.classList.add('desc');
+   description1.textContent=object.description;
+   textBox.appendChild(description1);
+   const button=document.createElement('button');
+   button.textContent='see product';
+   textBox.appendChild(button);
+box.appendChild(textBox);
+return box;
+
+
+   }
+function populate(lista){
+    const container=document.getElementById('container');
+    for (let i = 0; i < lista.length; i++) {
+        const item1 = createItem(lista[i]);
+      if(lista[i].category==params.category.toLocaleLowerCase()){
+
+        container.appendChild(item1); 
+      }
+        
+             
+    }
+    
+}
+populate(json);
+})

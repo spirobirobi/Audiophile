@@ -63,6 +63,7 @@ header .block ul {
 }
 header .block ul li {
   float: left;
+  cursor: pointer;
 }
 header .block ul li a {
   display: block;
@@ -357,6 +358,7 @@ footer ul {
 }
 footer ul li {
   float: left;
+  cursor: pointer;
 }
 footer ul li a {
   display: block;
