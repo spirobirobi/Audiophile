@@ -86,9 +86,9 @@ header .bar {
   background: #FFFFFF;
   opacity: 0.2;
   height: 1px;
-  width: 70vw;
+  width: 73vw;
   position: relative;
-  left: 9%;
+  left: 10%;
 }
 header .textbox {
   width: 50vw;
@@ -382,7 +382,7 @@ footer p {
 }
 footer .socialBox {
   position: absolute;
-  left: 1171px;
+  left: 1000px;
   top: 155px;
   display: flex;
   gap: 16px;
