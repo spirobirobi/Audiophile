@@ -287,8 +287,8 @@ footer p {
 }
 footer .socialBox {
   position: absolute;
-  left: 1000px;
-  top: 155px;
+  left: 65%;
+  top: 30%;
   display: flex;
   gap: 16px;
 }

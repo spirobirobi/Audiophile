@@ -32,6 +32,10 @@ fetch('./data.json')
    textBox.appendChild(description1);
    const button=document.createElement('button');
    button.textContent='see product';
+   button.setAttribute("id",object.id);
+   button.addEventListener("click",()=>{
+    location.replace("./product.html?id="+object.id);
+   })
    textBox.appendChild(button);
 box.appendChild(textBox);
 return box;
@@ -77,4 +81,5 @@ const catEarphones=document.getElementById('CatEarphones');
 catEarphones.addEventListener('click',()=>{
     location.replace("page2.html?category=Earphones")
 })
+
 })
