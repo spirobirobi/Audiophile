@@ -88,11 +88,94 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 200px;
 }
-main .productView {
+main #productView {
   width: 1110px;
   height: 560px;
   display: flex;
+  gap: 125px;
+}
+main #productView img {
+  width: 560px;
+  height: 540px;
+}
+main #productView .textBox {
+  padding-top: 100px;
+}
+main #productView .textBox .np {
+  color: #D87D4A;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding-bottom: 16px;
+  opacity: 1;
+}
+main #productView .textBox h2 {
+  padding-bottom: 32px;
+}
+main #productView .textBox #price {
+  color: #101010;
+  opacity: 1;
+}
+main #productView .textBox p {
+  opacity: 0.5;
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 18px;
+}
+main #productView .textBox #cart2 {
+  display: flex;
+  gap: 20px;
+}
+main #productView .textBox #cart2 .inputs {
+  position: relative;
+}
+main #productView .textBox #cart2 .inputs input {
+  width: 120px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: 0;
+  text-align: center;
+  cursor: default;
+}
+main #productView .textBox #cart2 .inputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+main #productView .textBox #cart2 .inputs input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+main #productView .textBox #cart2 .inputs input:focus {
+  outline: none;
+}
+main #productView .textBox #cart2 .inputs .btn-minus, main #productView .textBox #cart2 .inputs .btn-plus {
+  position: absolute;
+  top: 13px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+main #productView .textBox #cart2 .inputs .btn-minus {
+  left: 10px;
+}
+main #productView .textBox #cart2 .inputs .btn-plus {
+  left: 65%;
+}
+main #productView .textBox #cart2 button {
+  width: 160px;
+  height: 48px;
+  background-color: #D87D4A;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 main .categories {
   display: flex;
