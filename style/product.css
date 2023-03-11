@@ -66,6 +66,9 @@ header .block ul li {
   float: left;
   cursor: pointer;
 }
+header .block ul li :hover {
+  color: #D87D4A;
+}
 header .block ul li a {
   display: block;
   color: #FFFFFF;
@@ -88,49 +91,58 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 200px;
+  gap: 160px;
 }
-main #productView {
+main #newElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 160px;
+}
+main #newElements #productView {
   width: 1110px;
   height: 560px;
   display: flex;
   gap: 125px;
 }
-main #productView img {
+main #newElements #productView img {
   width: 560px;
   height: 540px;
 }
-main #productView .textBox {
+main #newElements #productView .textBox {
   padding-top: 100px;
 }
-main #productView .textBox .np {
+main #newElements #productView .textBox .np {
   color: #D87D4A;
   text-transform: uppercase;
   letter-spacing: 10px;
   padding-bottom: 16px;
   opacity: 1;
 }
-main #productView .textBox h2 {
+main #newElements #productView .textBox h2 {
   padding-bottom: 32px;
 }
-main #productView .textBox #price {
+main #newElements #productView .textBox #price {
   color: #101010;
   opacity: 1;
-}
-main #productView .textBox p {
-  opacity: 0.5;
-  padding-bottom: 32px;
   font-weight: 700;
   font-size: 18px;
 }
-main #productView .textBox #cart2 {
+main #newElements #productView .textBox p {
+  opacity: 0.5;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+main #newElements #productView .textBox #cart2 {
   display: flex;
   gap: 20px;
 }
-main #productView .textBox #cart2 .inputs {
+main #newElements #productView .textBox #cart2 .inputs {
   position: relative;
 }
-main #productView .textBox #cart2 .inputs input {
+main #newElements #productView .textBox #cart2 .inputs input {
   width: 120px;
   height: 48px;
   background-color: #F1F1F1;
@@ -138,16 +150,17 @@ main #productView .textBox #cart2 .inputs input {
   text-align: center;
   cursor: default;
 }
-main #productView .textBox #cart2 .inputs input::-webkit-inner-spin-button {
+main #newElements #productView .textBox #cart2 .inputs input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-main #productView .textBox #cart2 .inputs input::-webkit-outer-spin-button {
+main #newElements #productView .textBox #cart2 .inputs input::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
-main #productView .textBox #cart2 .inputs input:focus {
+main #newElements #productView .textBox #cart2 .inputs input:focus {
   outline: none;
 }
-main #productView .textBox #cart2 .inputs .btn-minus, main #productView .textBox #cart2 .inputs .btn-plus {
+main #newElements #productView .textBox #cart2 .inputs .btn-minus,
+main #newElements #productView .textBox #cart2 .inputs .btn-plus {
   position: absolute;
   top: 13px;
   width: 30px;
@@ -156,13 +169,13 @@ main #productView .textBox #cart2 .inputs .btn-minus, main #productView .textBox
   text-align: center;
   cursor: pointer;
 }
-main #productView .textBox #cart2 .inputs .btn-minus {
+main #newElements #productView .textBox #cart2 .inputs .btn-minus {
   left: 10px;
 }
-main #productView .textBox #cart2 .inputs .btn-plus {
+main #newElements #productView .textBox #cart2 .inputs .btn-plus {
   left: 65%;
 }
-main #productView .textBox #cart2 button {
+main #newElements #productView .textBox #cart2 button {
   width: 160px;
   height: 48px;
   background-color: #D87D4A;
@@ -176,6 +189,49 @@ main #productView .textBox #cart2 button {
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
+}
+main #newElements .info {
+  width: 1110px;
+  height: 318px;
+  display: flex;
+  gap: 125px;
+}
+main #newElements .info h3 {
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+main #newElements .info .features {
+  width: 635px;
+}
+main #newElements .info .features p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0.5;
+}
+main #newElements .info .inBox {
+  width: 350px;
+}
+main #newElements .info .inBox ul {
+  list-style-type: none;
+}
+main #newElements .info .inBox ul li {
+  margin-bottom: 8px;
+}
+main #newElements .info .inBox ul li p {
+  color: #D87D4A;
+  margin-right: 24px;
+  font-weight: 700;
+  font-size: 15px;
+}
+main #newElements .info .inBox ul li p span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #101010;
+  margin-left: 8px;
 }
 main .categories {
   display: flex;

@@ -24,6 +24,9 @@ header{
             list-style:none;
             li{
                 float: left;
+                :hover{
+                    color: $orange;
+                }
                 a{
                     display: block;
   color: $white;

@@ -1,43 +1,45 @@
 @import "colors";
 @import "typeography";
-*{
-    margin:0;
+* {
+    margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-header{
+header {
     background-color: $black;
     height: 10vh;
-    margin-bottom:160px;
-    img{
+    margin-bottom: 160px;
+    img {
         position: absolute;
         left: 10%;
-    top: 3.5%;
-    cursor: pointer;
+        top: 3.5%;
+        cursor: pointer;
     }
-    .block{
+    .block {
         display: flex;
         justify-content: center;
-      
-        
-        ul{
-            list-style:none;
-            li{
+
+        ul {
+            list-style: none;
+            li {
                 float: left;
                 cursor: pointer;
-                a{
+                :hover {
+                    color: $orange;
+                }
+                a {
                     display: block;
-  color: $white;
-  text-align: center;
-  padding: 34px;
-  text-decoration: none;
-  font-family: 'Manrope', sans-serif;
-font-size: 13px;
-font-weight: bold;
+                    color: $white;
+                    text-align: center;
+                    padding: 34px;
+                    text-decoration: none;
+                    font-family: "Manrope", sans-serif;
+                    font-size: 13px;
+                    font-weight: bold;
                 }
             }
         }
-        img{
+        img {
             width: 23px;
             height: 20px;
             position: relative;
@@ -45,261 +47,303 @@ font-weight: bold;
             top: 3.5vh;
         }
     }
-    
 }
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 200px;
-    #productView{
-        width: 1110px;
-        height: 560px;
+    gap: 160px;
+
+    #newElements{
         display: flex;
-        gap: 125px;
-        img{
-            width: 560px;
-            height: 540px;
-        }
-        .textBox{
-            padding-top: 100px;
-            .np{
-                color: $orange;
-                text-transform: uppercase;
-                letter-spacing: 10px;
-                padding-bottom: 16px;
-                opacity: 1;
+        flex-direction: column;
+    align-items: center;
+    gap: 160px;
+        #productView {
+            width: 1110px;
+            height: 560px;
+            display: flex;
+            gap: 125px;
+            img {
+                width: 560px;
+                height: 540px;
             }
-            h2{
-                padding-bottom: 32px;
-            }
-            #price{
-                color: $black;
-                opacity: 1;
-            }
-            p{
-                opacity: 0.5;
-                padding-bottom: 32px;
-                font-weight: 700;
-                font-size: 18px;
-            }
-            
-            #cart2{
-                display: flex;
-                gap: 20px;
-                .inputs{
-                    position: relative;
-                    input{
-                       
-                        width: 120px;
-                        height: 48px;  
-                        background-color: $grey;  
-                        border: 0;  
-                              
-                            text-align: center;  
+            .textBox {
+                padding-top: 100px;
+                .np {
+                    color: $orange;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    padding-bottom: 16px;
+                    opacity: 1;
+                }
+                h2 {
+                    padding-bottom: 32px;
+                }
+                #price {
+                    color: $black;
+                    opacity: 1;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                p {
+                    opacity: 0.5;
+                    padding-bottom: 32px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+    
+                #cart2 {
+                    display: flex;
+                    gap: 20px;
+                    .inputs {
+                        position: relative;
+                        input {
+                            width: 120px;
+                            height: 48px;
+                            background-color: $grey;
+                            border: 0;
+    
+                            text-align: center;
                             cursor: default;
                             &::-webkit-inner-spin-button {
                                 -webkit-appearance: none;
-                            } 
+                            }
                             &::-webkit-outer-spin-button {
                                 -webkit-appearance: none;
                             }
-                            &:focus{
+                            &:focus {
                                 outline: none;
                             }
-        
-                        
+                        }
+                        .btn-minus,
+                        .btn-plus {
+                            position: absolute;
+                            top: 13px;
+                            width: 30px;
+                            height: 30px;
+                            border: none;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                        .btn-minus {
+                            left: 10px;
+                        }
+                        .btn-plus {
+                            left: 65%;
+                        }
                     }
-                    .btn-minus, .btn-plus { 
-                        position: absolute;
-                        top: 13px;
-                        width: 30px;
-                        height: 30px;
-                        border: none;
-                        text-align: center;
-                        cursor: pointer;
-                    }
-                    .btn-minus {
-                        left: 10px;
-                    }
-                    .btn-plus {
-                       left: 65%;
-                    }
-                }
-               
-                    button{
+    
+                    button {
                         width: 160px;
                         height: 48px;
                         background-color: $orange;
-            color: $white;
-            border: 0;
-            border-radius: 3px;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 18px;
-            
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: pointer;
-                    }
-            }
-
-            
-        }
-            
-
+                        color: $white;
+                        border: 0;
+                        border-radius: 3px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 18px;
     
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .info {
+            width: 1110px;
+            height: 318px;
+            display: flex;
+            gap: 125px;
+            h3 {
+                text-transform: uppercase;
+                padding-bottom: 32px;
+            }
+            .features {
+                width: 635px;
+    
+                p {
+                    font-family: "Manrope";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    opacity: 0.5;
+                }
+            }
+            .inBox {
+                width: 350px;
+                ul {
+                    list-style-type: none;
+                    li {
+                        margin-bottom: 8px;
+    
+                        p {
+                            color: $orange;
+                            margin-right: 24px;
+                            font-weight: 700;
+                            font-size: 15px;
+    
+                            span {
+                                font-family: "Manrope";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 15px;
+                                color: $black;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-   
 
-    .categories{
+    .categories {
         display: flex;
         gap: 30px;
         justify-content: center;
         padding-bottom: 168px;
-        #present{
-            width:350px ;
-            height:204px ;
+        #present {
+            width: 350px;
+            height: 204px;
             border-radius: 8px;
             background-color: $grey;
             position: relative;
-           
-            
-            button{
+
+            button {
                 width: 58px;
-        height: 18px;
-        border: 0;
-        width: 58px;
-        height: 18px;
-        border: 0;
-        opacity: 0.5;
-cursor: pointer;
-font-weight: bold;
-&:hover{
-    color: $orange;
-    opacity: 1;
-}
+                height: 18px;
+                border: 0;
+                width: 58px;
+                height: 18px;
+                border: 0;
+                opacity: 0.5;
+                cursor: pointer;
+                font-weight: bold;
+                &:hover {
+                    color: $orange;
+                    opacity: 1;
+                }
             }
-            img{
+            img {
                 width: 130px;
                 height: 160px;
                 position: relative;
                 left: 30%;
                 bottom: 30%;
             }
-            h6{
+            h6 {
                 position: relative;
                 left: 37%;
                 bottom: 30%;
             }
-            button{
+            button {
                 position: relative;
                 left: 40%;
                 bottom: 25%;
             }
-            .arrow{
+            .arrow {
                 width: 5px;
                 height: 10px;
                 position: relative;
                 left: 37%;
                 bottom: 50px;
-
             }
-           
         }
-     
-    }  
-    .about{
+    }
+    .about {
         width: 1110px;
         height: 588px;
         position: relative;
         margin-bottom: 200px;
-        h2{
+        h2 {
             width: 445px;
             height: 88px;
             text-transform: uppercase;
             margin-bottom: 32px;
-            span{
+            span {
                 color: $orange;
             }
         }
-        p{
+        p {
             width: 445px;
             height: 175px;
             font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    opacity: 0.5;
-    margin: 0;
-           }
-           img{
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 0.5;
+            margin: 0;
+        }
+        img {
             width: 540px;
             height: 588px;
             border-radius: 5px;
             position: absolute;
             left: 570px;
-           bottom: 0%;
-           }
-        
+            bottom: 0%;
+        }
     }
 }
-footer{
-    width:100%;
-        height:365px;
-        background-color: $black;
+footer {
+    width: 100%;
+    height: 365px;
+    background-color: $black;
+    position: relative;
+    img {
         position: relative;
-        img{
-            position: relative;
-            top: 75px;
-            left: 165px;
+        top: 75px;
+        left: 165px;
+        cursor: pointer;
+    }
+    ul {
+        position: absolute;
+        left: 60%;
+        bottom: 64%;
+        list-style: none;
+        li {
+            float: left;
             cursor: pointer;
-          }
-          ul{ position: absolute;
-            left: 60%;
-            bottom: 64%;
-            list-style:none;
-            li{
-                float: left;
-                cursor: pointer;
-                a{
-                    display: block;
-  color: $white;
-  text-align: center;
-  padding: 34px;
-  text-decoration: none;
-  font-family: 'Manrope', sans-serif;
-font-size: 13px;
-font-weight: bold;
-                }
+            a {
+                display: block;
+                color: $white;
+                text-align: center;
+                padding: 34px;
+                text-decoration: none;
+                font-family: "Manrope", sans-serif;
+                font-size: 13px;
+                font-weight: bold;
             }
         }
-        p{
-            width: 540px;
-            height: 100px;
-            color: $white;
-            mix-blend-mode: normal;
+    }
+    p {
+        width: 540px;
+        height: 100px;
+        color: $white;
+        mix-blend-mode: normal;
         opacity: 0.5;
         position: absolute;
         top: 136px;
-        left:165px;
+        left: 165px;
+    }
+    .socialBox {
+        position: absolute;
+        left: 65%;
+        top: 30%;
+        display: flex;
+        gap: 16px;
+        img {
+            cursor: pointer;
         }
-        .socialBox{
-            position: absolute;
-            left: 65%;
-            top: 30%;
-            display: flex;
-            gap: 16px;
-            img{
-                cursor:pointer ;
-            }
-        }
-        .copyright{
-            position: absolute;
-            left: 165px;
-            top: 292px;
-            color: $white;
+    }
+    .copyright {
+        position: absolute;
+        left: 165px;
+        top: 292px;
+        color: $white;
         opacity: 0.5;
-        }
-
+    }
 }

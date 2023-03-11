@@ -59,16 +59,50 @@ tb.appendChild(cart2);
 
 
  }
+ function createInfo(object){
+    const info=document.createElement("div");
+    info.setAttribute("class","info");
+    const features=document.createElement("div");
+    features.setAttribute("class","features");
+    const ht=document.createElement("h3");
+    ht.textContent="features";
+    features.appendChild(ht);
+    const feat=document.createElement("p");
+    feat.textContent=object.features;
+    features.appendChild(feat);
+    info.appendChild(features);
+    const inBox=document.createElement("div");
+    inBox.setAttribute("class","inBox");
+    const ht2=document.createElement("h3");
+    ht2.textContent="in the box";
+    inBox.appendChild(ht2);
+    const ul=document.createElement("ul");
+    for(let i=0;i<object.includes.length;i++){
+        const li=document.createElement("li");
+        const p=document.createElement("p");
+        const  span=document.createElement("span");
+        span.textContent=object.includes[i].item;
+        p.textContent=object.includes[i].quantity+'x';
+        p.appendChild(span);
+       li.appendChild(p);
+        ul.appendChild(li);
+    }
+    inBox.appendChild(ul);
+    info.appendChild(inBox)
+    return info;
+ }
+  
 function populate(list){
     const main=document.getElementById("newElements");
     for(let i=0;i<list.length;i++){
         
-        //    const item1= createItem(list[i]);
-        //     main.appendChild(item1);
+        
         if(list[i].id==params.id){
             console.log("merge");
             const item1= createItem(list[i]);
+            const item2=createInfo(list[i]);
             main.appendChild(item1);
+            main.appendChild(item2);
         }
 
         
@@ -76,5 +110,6 @@ function populate(list){
 }
 
 populate(json);
+
 
 })

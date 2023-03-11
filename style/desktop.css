@@ -65,6 +65,9 @@ header .block ul li {
   float: left;
   cursor: pointer;
 }
+header .block ul li :hover {
+  color: #D87D4A;
+}
 header .block ul li a {
   display: block;
   color: #FFFFFF;
