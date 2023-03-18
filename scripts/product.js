@@ -91,6 +91,31 @@ tb.appendChild(cart2);
     info.appendChild(inBox)
     return info;
  }
+ function createGalerry(object){
+    const gallery=document.createElement("div");
+    gallery.setAttribute("class","gallery");
+    const rightside=document.createElement("div");
+    rightside.setAttribute("class","rightside");
+    gallery.appendChild(rightside);
+    const first=document.createElement("img");
+    first.setAttribute("id","first");
+    first.setAttribute("src",object.gallery.first.desktop);
+    rightside.appendChild(first);
+    const second=document.createElement("img");
+    second.setAttribute("id","second");
+    second.setAttribute("src",object.gallery.second.desktop);
+    rightside.appendChild(second);
+    const third=document.createElement("img");
+    third.setAttribute("id","third");
+    third.setAttribute("src",object.gallery.third.desktop);
+    gallery.appendChild(third);
+    return gallery;
+
+
+    
+
+    
+ }
   
 function populate(list){
     const main=document.getElementById("newElements");
@@ -101,8 +126,10 @@ function populate(list){
             console.log("merge");
             const item1= createItem(list[i]);
             const item2=createInfo(list[i]);
+            const item3=createGalerry(list[i]);
             main.appendChild(item1);
             main.appendChild(item2);
+            main.appendChild(item3);
         }
 
         

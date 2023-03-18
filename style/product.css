@@ -233,6 +233,31 @@ main #newElements .info .inBox ul li p span {
   color: #101010;
   margin-left: 8px;
 }
+main .gallery {
+  display: flex;
+  width: 1110px;
+  height: 592px;
+  gap: 20px;
+}
+main .gallery .rightside {
+  width: 445px;
+  height: 600px;
+}
+main .gallery .rightside #first {
+  width: 445px;
+  height: 280px;
+  border-radius: 6px;
+}
+main .gallery .rightside #second {
+  width: 445px;
+  height: 280px;
+  border-radius: 6px;
+}
+main .gallery #third {
+  width: 635px;
+  height: 565px;
+  border-radius: 6px;
+}
 main .categories {
   display: flex;
   gap: 30px;

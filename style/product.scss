@@ -201,6 +201,32 @@ main {
             }
         }
     }
+    .gallery{
+        display: flex;
+        width: 1110px;
+        height: 592px;
+        gap: 20px;
+       .rightside{
+        width: 445px;
+        height:600px;
+        #first{
+            width: 445px;
+            height: 280px;
+            border-radius: 6px;
+
+        }
+        #second{
+            width: 445px;
+            height: 280px;
+            border-radius: 6px;
+        }
+       }
+        #third{
+            width: 635px;
+            height: 565px;
+            border-radius: 6px;
+        }
+    }
 
     .categories {
         display: flex;
