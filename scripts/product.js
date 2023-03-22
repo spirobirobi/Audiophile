@@ -111,10 +111,34 @@ tb.appendChild(cart2);
     gallery.appendChild(third);
     return gallery;
 
-
-    
-
-    
+ }
+ function createYmal(object){
+    const ymal=document.createElement("div");
+    ymal.setAttribute("class","ymal");
+    const hd3=document.createElement("h3");
+    hd3.textContent="you may also like";
+    ymal.appendChild(hd3);
+    const elements=document.createElement("div");
+    elements.setAttribute("class","elements");
+    ymal.appendChild(elements);
+    for(let i=0;i<object.others.length;i++){
+        const element=document.createElement("div");
+element.setAttribute("class","element");
+const box=document.createElement("div");
+box.setAttribute("class","box");
+const img1=document.createElement("img");
+img1.setAttribute("src",object.others[i].image.desktop);
+box.appendChild(img1);
+element.appendChild(box);
+const hd5=document.createElement("h5");
+hd5.textContent=object.others[i].name;
+element.appendChild(hd5);
+const button=document.createElement("button");
+button.textContent="see product";
+element.appendChild(button);
+elements.appendChild(element);
+    }
+return ymal;
  }
   
 function populate(list){
@@ -127,9 +151,12 @@ function populate(list){
             const item1= createItem(list[i]);
             const item2=createInfo(list[i]);
             const item3=createGalerry(list[i]);
+            const item4=createYmal(list[i]);
             main.appendChild(item1);
             main.appendChild(item2);
             main.appendChild(item3);
+             main.appendChild(item4);
+
         }
 
         
@@ -137,6 +164,7 @@ function populate(list){
 }
 
 populate(json);
+
 
 
 })
