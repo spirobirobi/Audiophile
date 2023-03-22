@@ -20,4 +20,20 @@ const catEarphones=document.getElementById('CatEarphones');
 catEarphones.addEventListener('click',()=>{
     location.replace("page2.html?category=Earphones")
 })
+const mark2Button=document.getElementById("mark2Button");
+mark2Button.addEventListener('click',()=>{
+    location.replace("product.html?id=4");
+})
+const zx9Button=document.getElementById("zx9Button");
+zx9Button.addEventListener('click',()=>{
+    location.replace("product.html?id=6");
+})
+const zx7Button=document.getElementById("zx7Button");
+zx7Button.addEventListener('click',()=>{
+    location.replace("product.html?id=5");
+})
+const yx1Button=document.getElementById("yx1Button");
+yx1Button.addEventListener('click',()=>{
+    location.replace("product.html?id=1");
+})
 })

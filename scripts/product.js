@@ -39,17 +39,21 @@ input.setAttribute("type","number");
 input.setAttribute("class","num");
 input.setAttribute("value",0);
 input.setAttribute("readonly","");
+input.setAttribute("id","input1");
 inputs.appendChild(input);
 const minus=document.createElement("div");
 minus.setAttribute("class","btn-minus");
+minus.setAttribute("id","btn-minus");
 minus.textContent="-";
 inputs.appendChild(minus);
 const plus=document.createElement("div");
 plus.setAttribute("class","btn-plus");
+plus.setAttribute("id","btn-plus");
 plus.textContent="+";
 inputs.appendChild(plus);
 const button=document.createElement("button");
 button.textContent="add to cart";
+button.setAttribute("id","addToCart");
 cart2.appendChild(inputs);
 cart2.appendChild(button);
 tb.appendChild(cart2);
@@ -147,7 +151,7 @@ function populate(list){
         
         
         if(list[i].id==params.id){
-            console.log("merge");
+           
             const item1= createItem(list[i]);
             const item2=createInfo(list[i]);
             const item3=createGalerry(list[i]);
@@ -164,6 +168,56 @@ function populate(list){
 }
 
 populate(json);
+const headphones=document.getElementById('headphones');
+headphones.setAttribute('href', './page2.html?category=Headphones');
+const speakers=document.getElementById('speakers');
+speakers.setAttribute('href', './page2.html?category=Speakers');
+const earphones=document.getElementById('earphones');
+earphones.setAttribute('href', './page2.html?category=Earphones');
+const catHeadphones=document.getElementById('CatHeadphones');
+catHeadphones.addEventListener('click',()=>{
+    location.replace("page2.html?category=Headphones")
+})
+const catSpeakers=document.getElementById('CatSpeakers');
+catSpeakers.addEventListener('click',()=>{
+    location.replace("page2.html?category=Speakers")
+})
+const catEarphones=document.getElementById('CatEarphones');
+catEarphones.addEventListener('click',()=>{
+    location.replace("page2.html?category=Earphones")
+})
+const input=document.getElementById("input1");
+const plus=document.getElementById("btn-plus");
+plus.addEventListener('click',()=>{
+    input.value++;
+})
+const minus=document.getElementById("btn-minus");
+minus.addEventListener('click',()=>{
+    if(input.value>0)
+    {
+        input.value--;
+    }
+})
+
+const addToCart=document.getElementById("addToCart");
+addToCart.addEventListener("click",()=>{
+    const myObj={
+        id: json[params.id-1].id,
+        price:json[params.id-1].price,
+        image:json[params.id-1].image.desktop,
+        counter: input.value,
+        total:json[params.id-1].price * input.value,
+
+        
+    }
+    if(input.value!=0){
+        let oldItems = JSON.parse(localStorage.getItem('cart')) || [];
+        oldItems.push(myObj);
+        localStorage.setItem("cart", JSON.stringify(oldItems));
+    }
+    
+
+})
 
 
 
