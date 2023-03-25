@@ -214,6 +214,7 @@ addToCart.addEventListener("click",()=>{
         let oldItems = JSON.parse(localStorage.getItem('cart')) || [];
         oldItems.push(myObj);
         localStorage.setItem("cart", JSON.stringify(oldItems));
+        input.value=0;
     }
     
 
